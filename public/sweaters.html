@@ -348,9 +348,11 @@
     <!-- script to make the current page active in the header (Home) -->
     <script>
         document.getElementById("tops").classList.add("border-b-2", "border-black", "dark:border-white", "bg-gray-100", "dark:bg-gray-700");//for desktop navbar
-        document.getElementById("all-tops").classList.add("border-b-2", "border-black", "dark:border-white", "bg-gray-100", "dark:bg-gray-700");//for desktop navbar
         document.getElementById("all-top").classList.add("border-b-2", "border-black", "dark:border-white"); //for mobile navbar because ids are unique
-
+    
+        document.getElementById("sweaters").classList.add("border-b-2", "border-black", "dark:border-white", "bg-gray-100", "dark:bg-gray-700"); //for desktop navbar
+        document.getElementById("sweater").classList.add("border-b-2", "border-black", "dark:border-white"); //for mobile navbar because ids are unique
+    
     </script>
     <script>
         // Fetch data from Google Sheets
@@ -369,7 +371,7 @@
                 const reversedData = jsonData.slice().reverse();
 
                 // Filter and only display products whose category
-                const product = reversedData.filter(product => product.category === 'T-Shirt' || product.category === 'Sweater' || product.category === 'Hoodie');
+                const product = reversedData.filter(product => product.category === 'Sweater');
 
 
                 // Fetch data from Google Sheets and include the product.html file beacuse it handles it
