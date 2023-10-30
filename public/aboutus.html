@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phhop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+
+<body>
+    <!-- header starts here  -->
+    <header class="h-auto sticky top-0 z-50 ">
+        <nav class="border-gray-200 px-4 lg:px-6 py-3 bg-white dark:bg-black relative">
+            <div class="lg:grid grid-cols-7 place-content-center lg:mx-auto lg:px-10">
+                <div class="hidden col-span-3 justify-between items-center w-full lg:flex lg:w-auto" id="">
+                    <ul class="flex flex-row flex-wrap gap-2">
+                        <li id="homes">
+                            <a href="index.html"
+                                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">Home</a>
+                        </li>
+                        <li id="tops">
+                            <a href="tops.html"
+                                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">Tops</a>
+                        </li>
+                        <li id="bottoms">
+                            <a href="bottoms.html"
+                                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">Bottoms</a>
+                        </li>
+                        <li id="accessories">
+                            <a href="accessories.html"
+                                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">Accessories</a>
+                        </li>
+                        <li id="shoes">
+                            <a href="shoes.html"
+                                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">Shoes</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- website name / image -->
+                <div class="flex items-center justify-between lg:mx-auto">
+                    <a href="#" class="p-2 text-xl lg:hidden">
+                        <i class="fa-light fa-face-awesome"></i>
+                    </a>
+                    <a href="index.html" class="flex items-center w-fit">
+                        <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" /> -->
+                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">PHHOP
+                            SUPPLY</span>
+                    </a>
+                    <button type="button" class="p-2 text-xl lg:hidden" id="menu-button">
+                        <i class="fa-light fa-message-smile"></i>
+                    </button>
+                </div>
+
+                <!-- social media icons -->
+                <div class="col-span-3 hidden lg:flex items-center justify-end space-x-4">
+                    <!-- instagram  -->
+                    <div>
+                        <a href="https://www.instagram.com/phhopsupply/?igshid=MzMyNGUyNmU2YQ%3D%3D"
+                            class="relative flex h-10 w-10 text-2xl items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff] dark:text-black">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <!-- tiktok  -->
+                    <div>
+                        <a href="https://www.tiktok.com/@phhopsupply?_t=8gv6UarQ4Qh&_r=1"
+                            class="relative flex h-10 w-10 text-xl items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff] dark:text-black">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+
+                    <!--  whatsapp -->
+                    <div>
+                        <a href="https://wa.me/9702693095?text=Hello%20there!"
+                            class="relative flex h-10 w-10 text-xl items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff] dark:text-black">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                    <!--  viber -->
+                    <div>
+                        <a href="viber://add?number=9779702693095"
+                            class="relative flex h-10 w-10 text-xl items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff] dark:text-black">
+                            <i class="fa-brands fa-viber"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dropdown menu, initially hidden -->
+                <div
+                    class="absolute right-0 z-10 mt-2 mr-3 origin-top-right rounded-md bg-white dark:bg-gray-900 shadow-lg hidden">
+                    <div class="p-1">
+                        <a href="https://www.instagram.com/phhopsupply/?igshid=MzMyNGUyNmU2YQ%3D%3D"
+                            class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
+                                    class="fa-brands fa-instagram"></i></span><span>Instagram</span></a>
+                        <a href="https://www.tiktok.com/@phhopsupply?_t=8gv6UarQ4Qh&_r=1"
+                            class="block px-4 py-2 whitespace-nowrap space-x-3">
+                            <span><i class="fa-brands fa-tiktok"></i></span><span>TikTok</span></a>
+                        <a href="https://wa.me/9702693095?text=Hello%20there!"
+                            class="block px-4 py-2 whitespace-nowrap space-x-3">
+                            <span><i class="fa-brands fa-whatsapp"></i></span><span>Whatsapp</span></a>
+                        <a href="viber://add?number=9779702693095"
+                            class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
+                                    class="fa-brands fa-viber"></i></span><span>Viber</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    // Get references to the button and the dropdown menu
+                    const menuButton = document.getElementById("menu-button");
+                    const dropdownMenu = document.querySelector(".absolute.right-0");
+
+                    // Function to toggle the dropdown menu's visibility
+                    function toggleDropdown() {
+                        dropdownMenu.classList.toggle("hidden");
+                    }
+
+                    // Add a click event listener to the button
+                    menuButton.addEventListener("click", toggleDropdown);
+
+                    // Add a click event listener to close the dropdown when clicking outside of it
+                    document.addEventListener("click", function (event) {
+                        if (
+                            !menuButton.contains(event.target) &&
+                            !dropdownMenu.contains(event.target)
+                        ) {
+                            dropdownMenu.classList.add("hidden");
+                        }
+                    });
+                });
+            </script>
+            </div>
+        </nav>
+    </header>
+    <!-- header ends here -->
+
+    <!-- hero secton starts here-->
+    <div class="max-w-7xl mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div
+            class="lg:flex-grow md:w-1/2 md:ml-24 pt-6 flex flex-col md:items-start md:text-left mb-40 items-center text-center">
+            <h1 class="mb-5 sm:text-6xl text-5xl items-center Avenir xl:w-2/2 text-gray-900">We are making Stunning
+                Websites</h1>
+            <p class="mb-4 xl:w-3/4 text-gray-600 text-lg">nine4 is a free to use website template for websites made
+                with Next.js and styled with Tailwind CSS</p>
+            <div class="flex justify-center"><a
+                    class="inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-transparent border rounded-lg bg-gray-900"
+                    href="https://github.com/r1/nine4-2/"><span class="justify-center">Find out more</span></a></div>
+        </div>
+        <div class="xl:mr-44 sm:mr-0 sm:mb-28 mb-0 lg:mb-0 mr-48 md:pl-10"><img class="w-80 md:ml-1 ml-24"
+                alt="iPhone-12" src="/images/iPhone-12-Mockup.png"></div>
+    </div>
+    <!-- hero section ends here -->
+
+    <!-- some images here -->
+    <div class="grr max-w-7xl pt-20 mx-auto text-center">
+        <h1 class="mb-8 text-6xl Avenir font-semibold text-gray-900">Less code, less effort.</h1>
+        <h1 class="mb-8 text-2xl Avenir font-semibold text-gray-600 text-center">Minify your CSS with Tailwind's built
+            in PostCSS support.</h1>
+        <div class="container flex flex-col items-center justify-center mx-auto rounded-lg "><img
+                class="object-cover object-center w-3/4 mb-10 g327 border rounded-lg shadow-md" alt="Placeholder Image"
+                src="./images/placeholder.png"></div>
+    </div>
+
+    <!-- some images END here -->
+
+</body>
+
+</html>
