@@ -83,57 +83,56 @@
 
           <!--  viber -->
           <div>
-            <a href="viber://add?number=9702693095"
+            <a href="viber://add?number=9779702693095"
               class="relative flex h-10 w-10 text-xl items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff] dark:text-black">
               <i class="fa-brands fa-viber"></i>
             </a>
           </div>
         </div>
 
-          <!-- Dropdown menu, initially hidden -->
-          <div
-            class="absolute right-0 z-10 mt-2 mr-3 origin-top-right rounded-md bg-white dark:bg-gray-900 shadow-lg hidden">
-            <div class="p-1">
-              <a href="https://www.instagram.com/phhopsupply/?igshid=MzMyNGUyNmU2YQ%3D%3D"
-                class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
-                    class="fa-brands fa-instagram"></i></span><span>Instagram</span></a>
-              <a href="https://www.tiktok.com/@phhopsupply?_t=8gv6UarQ4Qh&_r=1"
-                class="block px-4 py-2 whitespace-nowrap space-x-3">
-                <span><i class="fa-brands fa-tiktok"></i></span><span>TikTok</span></a>
-              <a href="https://wa.me/9702693095?text=Hello%20there!"
-                class="block px-4 py-2 whitespace-nowrap space-x-3">
-                <span><i class="fa-brands fa-whatsapp"></i></span><span>Whatsapp</span></a>
-              <a href="viber://add?number=9702693095" class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
-                    class="fa-brands fa-viber"></i></span><span>Viber</span></a>
-            </div>
+        <!-- Dropdown menu, initially hidden -->
+        <div
+          class="absolute right-0 z-10 mt-2 mr-3 origin-top-right rounded-md bg-white dark:bg-gray-900 shadow-lg hidden">
+          <div class="p-1">
+            <a href="https://www.instagram.com/phhopsupply/?igshid=MzMyNGUyNmU2YQ%3D%3D"
+              class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
+                  class="fa-brands fa-instagram"></i></span><span>Instagram</span></a>
+            <a href="https://www.tiktok.com/@phhopsupply?_t=8gv6UarQ4Qh&_r=1"
+              class="block px-4 py-2 whitespace-nowrap space-x-3">
+              <span><i class="fa-brands fa-tiktok"></i></span><span>TikTok</span></a>
+            <a href="https://wa.me/9702693095?text=Hello%20there!" class="block px-4 py-2 whitespace-nowrap space-x-3">
+              <span><i class="fa-brands fa-whatsapp"></i></span><span>Whatsapp</span></a>
+            <a href="viber://add?number=9779702693095" class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
+                  class="fa-brands fa-viber"></i></span><span>Viber</span></a>
           </div>
         </div>
+      </div>
 
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            // Get references to the button and the dropdown menu
-            const menuButton = document.getElementById("menu-button");
-            const dropdownMenu = document.querySelector(".absolute.right-0");
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Get references to the button and the dropdown menu
+          const menuButton = document.getElementById("menu-button");
+          const dropdownMenu = document.querySelector(".absolute.right-0");
 
-            // Function to toggle the dropdown menu's visibility
-            function toggleDropdown() {
-              dropdownMenu.classList.toggle("hidden");
+          // Function to toggle the dropdown menu's visibility
+          function toggleDropdown() {
+            dropdownMenu.classList.toggle("hidden");
+          }
+
+          // Add a click event listener to the button
+          menuButton.addEventListener("click", toggleDropdown);
+
+          // Add a click event listener to close the dropdown when clicking outside of it
+          document.addEventListener("click", function (event) {
+            if (
+              !menuButton.contains(event.target) &&
+              !dropdownMenu.contains(event.target)
+            ) {
+              dropdownMenu.classList.add("hidden");
             }
-
-            // Add a click event listener to the button
-            menuButton.addEventListener("click", toggleDropdown);
-
-            // Add a click event listener to close the dropdown when clicking outside of it
-            document.addEventListener("click", function (event) {
-              if (
-                !menuButton.contains(event.target) &&
-                !dropdownMenu.contains(event.target)
-              ) {
-                dropdownMenu.classList.add("hidden");
-              }
-            });
           });
-        </script>
+        });
+      </script>
       </div>
     </nav>
   </header>
@@ -213,6 +212,10 @@
   </nav>
   <!-- this is for mobile navigation ends here -->
 
+
+
+
+  
   <!-- script to make the current page active in the header (Home) -->
   <script>
     document.getElementById("homes").classList.add("border-b-2", "border-black", "dark:border-white", "bg-gray-100", "dark:bg-gray-700");
@@ -296,15 +299,17 @@
                 <div class="aspect-square overflow-hidden rounded-lg">
                     <img src="${data.image}" alt="${data.description}" class="h-full w-full object-cover object-center group-hover:brightness-75 duration-300">
                 </div>
-                <h3 class="mt-4 text-base">${data.name}</h3>
-                <div class="flex items-center justify-between mt-1 opacity-80 text-base">
+                <h3 class="mt-4 text-base font-semibold tracking-tight ">${data.name}</h3>
+                <div class="flex items-center justify-between mt-1 opacity-80 text-base tracking-tight ">
                     <p>${data.color}</p>
                     <p>${data.size}</p>
-                    <p class="font-semibold" >Rs ${data.price}</p>
                 </div>
+                <p class="font-semibold mt-1 opacity-80 text-base tracking-tight" >Rs ${data.price}</p>
+
             </div>
         `;
     }
+
   </script>
 
   <!-- footer starts here -->

@@ -125,7 +125,7 @@
               <a href="https://wa.me/9702693095?text=Hello%20there!"
                 class="block px-4 py-2 whitespace-nowrap space-x-3">
                 <span><i class="fa-brands fa-whatsapp"></i></span><span>Whatsapp</span></a>
-              <a href="viber://add?number=9702693095" class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
+              <a href="viber://add?number=9779702693095" class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
                     class="fa-brands fa-viber"></i></span><span>Viber</span></a>
             </div>
           </div>
@@ -236,6 +236,19 @@
                 </g>
               </g>
             </svg>
+            <style>
+              /* Define the fill color for the light mode */
+              .theme-icon {
+                fill: #000; /* Set your light mode color here */
+              }
+            
+              /* Media query for dark mode */
+              @media (prefers-color-scheme: dark) {
+                .theme-icon {
+                  fill: #FFF; /* Set your dark mode color here */
+                }
+              }
+            </style>
             <span>Bottoms</span>
           </a>
         </div>
@@ -345,12 +358,13 @@
                 <div class="aspect-square overflow-hidden rounded-lg">
                     <img src="${data.image}" alt="${data.description}" class="h-full w-full object-cover object-center group-hover:brightness-75 duration-300">
                 </div>
-                <h3 class="mt-4 text-base">${data.name}</h3>
-                <div class="flex items-center justify-between mt-1 opacity-80 text-base">
+                <h3 class="mt-4 text-base font-semibold tracking-tight ">${data.name}</h3>
+                <div class="flex items-center justify-between mt-1 opacity-80 text-base tracking-tight ">
                     <p>${data.color}</p>
                     <p>${data.size}</p>
-                    <p class="font-semibold" >Rs ${data.price}</p>
                 </div>
+                <p class="font-semibold mt-1 opacity-80 text-base tracking-tight" >Rs ${data.price}</p>
+
             </div>
         `;
         }

@@ -102,7 +102,7 @@
 
           <!--  viber -->
           <div>
-            <a href="viber://add?number=9702693095"
+            <a href="viber://add?number=9779702693095"
               class="relative flex h-10 w-10 text-xl items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff] dark:text-black">
               <i class="fa-brands fa-viber"></i>
             </a>
@@ -122,7 +122,7 @@
               <a href="https://wa.me/9702693095?text=Hello%20there!"
                 class="block px-4 py-2 whitespace-nowrap space-x-3">
                 <span><i class="fa-brands fa-whatsapp"></i></span><span>Whatsapp</span></a>
-              <a href="viber://add?number=9702693095" class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
+              <a href="viber://add?number=9779702693095" class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
                     class="fa-brands fa-viber"></i></span><span>Viber</span></a>
             </div>
           </div>
@@ -329,16 +329,17 @@
       // Function to create HTML for a product card
       function createCardHTML(data) {
         return `
-            <div class="group">
+        <div class="group">
                 <div class="aspect-square overflow-hidden rounded-lg">
                     <img src="${data.image}" alt="${data.description}" class="h-full w-full object-cover object-center group-hover:brightness-75 duration-300">
                 </div>
-                <h3 class="mt-4 text-base">${data.name}</h3>
-                <div class="flex items-center justify-between mt-1 opacity-80 text-base">
+                <h3 class="mt-4 text-base font-semibold tracking-tight ">${data.name}</h3>
+                <div class="flex items-center justify-between mt-1 opacity-80 text-base tracking-tight ">
                     <p>${data.color}</p>
                     <p>${data.size}</p>
-                    <p class="font-semibold" >Rs ${data.price}</p>
                 </div>
+                <p class="font-semibold mt-1 opacity-80 text-base tracking-tight" >Rs ${data.price}</p>
+
             </div>
         `;
       }
