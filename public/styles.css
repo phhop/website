@@ -1356,6 +1356,10 @@ video {
     inset: 0px;
   }
 
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .md\:max-w-md {
     max-width: 28rem;
   }
