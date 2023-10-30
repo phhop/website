@@ -369,7 +369,7 @@
                 const reversedData = jsonData.slice().reverse();
 
                 // Filter and only display products whose category
-                const product = reversedData.filter(product => product.category === 'T-Shirt' || product.category === 'Sweater' || product.category === 'Hoodie');
+                const product = reversedData.filter(product => product.category === 'T-Shirt' || product.category === 'Sweater' || product.category === 'Hoodie' || product.category === 'Jacket');
 
 
                 // Fetch data from Google Sheets and include the product.html file beacuse it handles it
@@ -439,6 +439,16 @@
         `;
         }
     </script>
+    <!-- footer starts here -->
+<footer>
+  <div class="mb-16 lg:mb-0 flex flex-col items-center justify-center py-4 text-sm text-gray-500 dark:text-gray-400">
+      <p class="font-medium">“Get phhop’d Up and Own the Urban Jungle!”</p> 
+      <p>Wholesale and Retail</p>
+      <p class="mb-2">Kathmandu, Nepal</p>
+      <p>© 2023 phhop. All rights reserved.</p>
+  </div>
+</footer>
+<!-- footer ends here -->
 </body>
 
 </html>
